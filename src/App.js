@@ -1,4 +1,4 @@
-import styles from './style/styles.css';
+import './style/styles.css';
 import React from 'react';
 import { useState } from 'react';
 
@@ -57,7 +57,8 @@ export default function Board() {
   }
 
   return (
-    <div className="status">{status}
+    <div className="status">
+      {status}
       <div className='container'>
           <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
           <Square value={squares[1]} onSquareClick={() => handleClick(1)} />

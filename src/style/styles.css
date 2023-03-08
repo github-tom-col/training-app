@@ -9,9 +9,15 @@
   }
 
   .container {
+    margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: fit-content;
+  }
+
+  .status {
+    font-size: x-large;
+    margin: 25px;
   }
   
   .square {
