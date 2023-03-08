@@ -19,6 +19,11 @@
     font-size: x-large;
     margin: 25px;
   }
+
+  .restart-button {
+    margin-top: 3vh;
+    margin-left: 8vw;
+  }
   
   .square {
     width: 100px;

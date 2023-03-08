@@ -30,6 +30,10 @@ function calculateWinner(squares) {
   return null;
 }
 
+function refreshPage() {
+  window.location.reload(false);
+}
+
 export default function Board() {
   const [xIsNext, setXIsNext] = useState(true);
   const [squares, setSquares] = useState(Array(9).fill(null));
@@ -70,6 +74,10 @@ export default function Board() {
           <Square value={squares[7]} onSquareClick={() => handleClick(7)} />
           <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
       </div>
+        <div className='restart-button'>
+          <button onClick={refreshPage}>Restart the game</button>
+        </div>
     </div>
+    
   );
 }
