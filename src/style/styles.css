@@ -7,6 +7,12 @@
     border: 1px solid #ccc;
     box-shadow: 0 0 10px #ccc;
   }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: fit-content;
+  }
   
   .square {
     width: 100px;
